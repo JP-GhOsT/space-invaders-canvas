@@ -45,7 +45,9 @@ O principal foco deste projeto é compreender o funcionamento do **Canvas** e a 
 
 ---
 
-📂 Estrutura do Projeto
+## 📂 Estrutura do Projeto
+
+```
 📁 aula-space-invaders
  ├── index.html
  ├── style.css
@@ -54,7 +56,7 @@ O principal foco deste projeto é compreender o funcionamento do **Canvas** e a 
      ├── index.js
      ├── classes
      │    ├── Grid.js
-     │    ├── Invaders.js   
+     │    ├── Invaders.js
      │    ├── Player.js
      │    └── Projectile.js
      ├── utils
@@ -62,8 +64,7 @@ O principal foco deste projeto é compreender o funcionamento do **Canvas** e a 
      └── assets
           ├── audios
           └── images
-
-
+```
 ---
 
 ## ▶️ Como Executar
