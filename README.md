@@ -1,34 +1,49 @@
-👾 Space Invaders - HTML Canvas 👾
+# 👾 Space Invaders - HTML Canvas 👾
 
 🚧 Projeto em desenvolvimento  
-Sistema de inimigos em fase de implementação.
+Sistema de vida e levels em fase de implantação.
 
 Projeto desenvolvido para consolidar conceitos de renderização gráfica com HTML5 Canvas e lógica de jogos utilizando JavaScript, baseado em uma aula prática.
 
-📌 Sobre o Projeto
+---
 
-Este projeto é uma versão simplificada do clássico jogo de Atari Space Invaders.
-O jogador controla uma nave que se move horizontalmente e dispara projéteis.
+## 📌 Sobre o Projeto
 
-O principal foco deste projeto foi compreender o funcionamento do Canvas e a implementação da lógica de jogos em JavaScript, estruturando o jogo sem o uso de uma engine.
+Este projeto é uma versão simplificada do clássico jogo de Atari **Space Invaders**.
 
-🛠️ Tecnologias Utilizadas
+O jogador controla uma nave que se move horizontalmente e dispara projéteis contra os inimigos.
 
-HTML5
+O principal foco deste projeto é compreender o funcionamento do **Canvas** e a implementação da lógica de jogos em **JavaScript Puro**, estruturando o jogo sem o uso de uma engine.
 
-CSS3
+---
 
-JavaScript
+## 🛠️ Tecnologias Utilizadas
 
-API Canvas
+- HTML5  
+- CSS3  
+- JavaScript  
+- API Canvas  
 
-🎮 Controles
+---
 
-⬅️ A → mover para esquerda
+## 🎮 Funcionalidades Implementadas
 
-➡️ D → mover para direita
+- ✔️ Movimentação do jogador  
+- ✔️ Sistema de disparo do jogador  
+- ✔️ Sistema de inimigos (Invaders)  
+- ✔️ Sistema de disparo dos inimigos  
+- ✔️ Detecção de colisão entre projéteis e inimigos  
+- ✔️ Loop de animação com `requestAnimationFrame`
 
-Espaço → atirar
+---
+
+## 🎮 Controles
+
+⬅️ **A** → mover para esquerda  
+➡️ **D** → mover para direita  
+🚀 **Espaço** → atirar  
+
+---
 
 📂 Estrutura do Projeto
 📁 aula-space-invaders
@@ -38,6 +53,8 @@ Espaço → atirar
  └── src
      ├── index.js
      ├── classes
+     │    ├── Grid.js
+     │    ├── Invaders.js   
      │    ├── Player.js
      │    └── Projectile.js
      ├── utils
@@ -46,36 +63,54 @@ Espaço → atirar
           ├── audios
           └── images
 
-▶️ Como Executar
 
-Basta abrir o arquivo index.html no navegador.
+---
 
-Se estiver usando VS Code, pode usar a extensão Live Server para facilitar.
+## ▶️ Como Executar
 
-📚 O que Aprendi
+1. Clone o repositório:
 
-Criar e utilizar o elemento `canvas`
+```bash
+git clone <url-do-repositorio>
+```
 
-Desenhar elementos na tela com JavaScript
+2. Acesse a pasta do projeto:
 
-Criar um loop de animação
+```bash
+cd aula-space-invaders
+```
 
-Detectar teclas pressionadas
+3. Abra o arquivo `index.html` no navegador.
 
-Fazer uma lógica simples de colisão
+Se estiver usando VS Code, pode utilizar a extensão **Live Server** para facilitar.
+
+---
+
+## 📚 O que Aprendi
+
+- Criar e utilizar o elemento `canvas`
+- Renderizar elementos na tela com JavaScript
+- Criar um loop de animação com `requestAnimationFrame`
+- Detectar e gerenciar múltiplas teclas pressionadas
+- Estruturar o código utilizando classes
+- Implementar lógica de colisão
+- Organizar projeto em módulos
+- Separar responsabilidades (Player, Invaders, Grid, Projectile)
+
+---
 
 ## 🚀 Próximas Implementações
 
-- Sistema completo de inimigos
-- Detecção de colisão entre projéteis e inimigos
-- Sistema de pontuação
-- Tela de Game Over
-- Versão 2.0 com artes autorais
-- Novas mecânicas de gameplay
-- Reformulação visual e sonora
+- 🔄 Sistema de vida do jogador
+- 📈 Sistema de pontuação
+- 🎯 Levels progressivos
+- 💀 Tela de Game Over
+- 🎨 Versão 2.0 com artes autorais
+- 🚀Novas mecânicas de gameplay
+- 🔊 Reformulação visual e sonora
 
+---
 
+## 🎯 Observação
 
-🎯 Observação
-
-Este projeto foi feito apenas para fins de aprendizado e prática.
+Este projeto foi feito com fins educacionais para consolidar conceitos de lógica de programação e desenvolvimento de jogos utilizando JavaScript puro.
