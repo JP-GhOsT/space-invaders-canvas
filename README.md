@@ -11,9 +11,27 @@ Projeto desenvolvido para consolidar conceitos de renderização gráfica com HT
 
 Este projeto é uma versão simplificada do clássico jogo de Atari **Space Invaders**.
 
+- Estruturação de um game loop manual
+- Implementação de sistema de colisão (Rectangle vs Rectangle)
+- Gerenciamento de estados do jogo (PLAYING / GAMEOVER)
+- Sistema de partículas para explosões
+- Organização modular utilizando ES6 Modules
+
 O jogador controla uma nave que se move horizontalmente e dispara projéteis contra os inimigos.
 
 O principal foco deste projeto é compreender o funcionamento do **Canvas** e a implementação da lógica de jogos em **JavaScript Puro**, estruturando o jogo sem o uso de uma engine.
+
+---
+
+## 🧠 Conceitos Técnicos Aplicados
+
+- Renderização com **HTML5 Canvas**
+- Loop de animação com `requestAnimationFrame`
+- Detecção de colisão manual
+- Sistema de partículas com fade-out (opacity)
+- Separação de responsabilidades usando classes
+- Manipulação de múltiplas teclas pressionadas
+- Controle de estado do jogo
 
 ---
 
@@ -21,19 +39,22 @@ O principal foco deste projeto é compreender o funcionamento do **Canvas** e a 
 
 - HTML5  
 - CSS3  
-- JavaScript  
+- JavaScript (E65 Modules)
 - API Canvas  
 
 ---
 
 ## 🎮 Funcionalidades Implementadas
 
-- ✔️ Movimentação do jogador  
+- ✔️ Movimentação do jogador com rotação suave 
 - ✔️ Sistema de disparo do jogador  
 - ✔️ Sistema de inimigos (Invaders)  
 - ✔️ Sistema de disparo dos inimigos  
-- ✔️ Detecção de colisão entre projéteis e inimigos  
-- ✔️ Loop de animação com `requestAnimationFrame`
+- ✔️ Grid dinâmico de inimigos
+- ✔️ Detecção de colisão precisa
+- ✔️ Sistema de partículas com efeito de explosão
+- ✔️ Gerenciamento de Game State
+- ✔️ Obstáculos com sistema de impacto`
 
 ---
 
@@ -57,6 +78,8 @@ O principal foco deste projeto é compreender o funcionamento do **Canvas** e a 
      ├── classes
      │    ├── Grid.js
      │    ├── Invaders.js
+     │    ├── Obstacle.js
+     │    ├── Particle.js
      │    ├── Player.js
      │    └── Projectile.js
      ├── utils
@@ -65,6 +88,7 @@ O principal foco deste projeto é compreender o funcionamento do **Canvas** e a 
           ├── audios
           └── images
 ```
+
 ---
 
 ## ▶️ Como Executar
